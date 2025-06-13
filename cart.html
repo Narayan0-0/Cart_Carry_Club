@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - CarryClub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="additional-styles.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">CarryClub</div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="m-0" style="color: white;">Carry<span style="color: #d4a556;">Club</span></h1>
+                </a>
+                <!-- <h1 class="m-0" style="color: white;">Carry<span style="color: #d4a556;">Club</span></h1> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Off-canvas Navigation -->
+                <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CarryClub Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="flex-direction: row-reverse;">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#products">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#featured-collection">Collections</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center active" href="cart.html">
+                                    <i class="fas fa-shopping-cart me-1"></i> Cart
+                                    <span class="badge bg-danger cart-count ms-1">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Your Shopping Cart</h2>
+            <div id="cart-container">
+                <!-- Cart items will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">You May Also Like</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 small-768">
+                        <img src="images/c1.webp" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Summer Tote</h5>
+                            <p class="fw-bold">$119.99</p>
+                            <a href="#" class="btn btn-colour">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 small-768">
+                        <img src="images/c2.webp" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Beach Bag</h5>
+                            <p class="fw-bold">$99.99</p>
+                            <a href="#" class="btn btn-colour">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 small-768">
+                        <img src="images/c3.webp" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Evening Clutch</h5>
+                            <p class="fw-bold">$79.99</p>
+                            <a href="#" class="btn btn-colour">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 small-768">
+                        <img src="images/c4.webp" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Crossbody Mini</h5>
+                            <p class="fw-bold">$89.99</p>
+                            <a href="#" class="btn btn-colour">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="m-0" style="color: white;">Carry<span style="color: #d4a556;">Club</span></h4>
+                    <p>Crafting premium handbags that combine style, functionality, and sustainability. Each bag is designed to empower and inspire.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h4>Shop</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#products" class="text-white text-decoration-none">Tote Bags</a></li>
+                        <li><a href="index.html#products" class="text-white text-decoration-none">Crossbody Bags</a></li>
+                        <li><a href="index.html#products" class="text-white text-decoration-none">Clutches</a></li>
+                        <li><a href="index.html#featured-collection" class="text-white text-decoration-none">Backpacks</a></li>
+                        <li><a href="index.html#featured-collection" class="text-white text-decoration-none">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h4>Help</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#contact" class="text-white text-decoration-none">FAQs</a></li>
+                        <li><a href="index.html#contact" class="text-white text-decoration-none">Shipping</a></li>
+                        <li><a href="index.html#contact" class="text-white text-decoration-none">Returns</a></li>
+                        <li><a href="index.html#contact" class="text-white text-decoration-none">Order Tracking</a></li>
+                        <li><a href="index.html#size-guide" class="text-white text-decoration-none">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Lorem, ipsum dolor.</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 96-123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@carryclub.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 CarryClub. All Rights Reserved.</p>
+                <div class="mt-2">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-white text-decoration-none">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Cart JS -->
+    <script src="cart.js"></script>
+</body>
+</html>
